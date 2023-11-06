@@ -1,0 +1,403 @@
+@font-face {
+    font-family:"logo" ;
+    src: url(./logo.otf);
+}
+
+@font-face {
+    font-family: "nav";
+    src: url(CaviarDreams.ttf) ;
+    
+}
+
+
+:root {
+   --cor1:  #f086e7;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+
+}
+
+
+nav * {
+    font-family: "nav";
+    font-weight: bolder;
+    padding: 3px;
+}
+
+.inicio p {
+    margin: 0px 0px;
+    font-weight: bolder;
+}
+
+
+.text * {
+    margin: 10px 0px;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100vw;
+    box-shadow: 0px 0px 10px 0px  black;
+    position: fixed;
+    background-color: white;
+    
+
+}
+
+.logo {
+    font-family:"logo" ;
+    margin-left: 60px;
+    font-size: 25pt;
+}
+
+.marc {
+    color:var(--cor1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 60px;
+}
+
+
+
+.disabled {
+    border-bottom: 1px solid var(--cor1);
+    color:  var(--cor1);
+}
+
+.abled:hover {
+    color:  var(--cor1);
+
+}
+
+.fundo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 10px black;
+    background-size: cover;
+}
+
+.inicio {
+    background-image: url(pexels-igor-ovsyannykov-205961.jpg);
+
+}
+
+.apr {
+    background-image: url(plano-de-fundo-texturizado-em-aquarela-rosa_53876-155929.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.marketing {
+    background-image: url(pexels-alexander-dummer-132694.jpg);
+}
+
+.contato {
+    background-image: url(pexels-cup-of-couple-8472479.jpg);
+}
+/*  */
+.produt {
+    background-image: url(abstract-blur-supermarket.jpg);
+}
+
+.nhoques {
+    background-image: url(gnocchi-g5a3827421_1920.jpg);
+    
+}
+.marketing > .escuro {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 253, 253, 0.973);
+}
+
+.escuro {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px black;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.911);
+}
+
+
+
+.escuro p {
+    font-size: 15pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    padding: 20px;
+    gap: 30px;
+    right:  -50%;
+    z-index: 999;
+    transition: 2s;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.left, .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.inicio .text {
+    margin-left: 30px;
+    width: 40%;
+    
+}
+
+.text {
+
+    margin-left: 30px;
+    width: 60%;
+    
+}
+
+
+.text h1 {
+    font-family: "nav";
+    font-size: 45pt;
+}
+
+#t-logo {
+    font-size: 80pt;
+    font-family: "logo";
+    margin: 0;
+}
+
+h1 span  {
+    color: var(--cor1);
+}
+
+.text button {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: none;
+    padding: 20px;
+    font-size: 15pt;
+    font-family: "nav";
+    font-weight: bold;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.text p {
+    margin-top: 20px;
+    font-family: "nav";
+    font-weight: bolder;
+    font-size: 18pt;
+
+}
+
+.text button:hover {
+    background: var(--cor1);
+   
+    color:rgb(255, 255, 255);
+    border: none;
+}
+
+.right img {
+    margin-top: 20px;
+    width: 50%;
+}
+
+
+.container {
+    visibility: hidden;
+}
+
+/* Swiper js  */
+
+.swiper {
+    width: 80%;
+    height: 80%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 450px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.card h1 {
+    font-family: "nav";
+
+}
+
+
+
+footer {
+    height: 100px    ;
+    width: 100vw;
+    font-family: "nav";
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    background-color: rgb(255, 255, 255);
+}
+
+footer a {
+    color: #f086e7;
+    cursor: pointer;
+}
+
+.icone  {
+    display: none;
+    font-size: 18pt;
+}
+
+.pop-up {
+    position: fixed;
+    z-index: 997;
+    top: 55%;
+    left: 50%;
+    width: 700px;
+    height: 600px;
+    background-color: #f086e7e1;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:29px;
+    flex-direction: column;
+    transition: 2s;
+ 
+}
+
+.sumir {
+    display: none;
+}
+
+
+.forms {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.forms input  {
+    padding: 10px;
+    border: none;
+    background: white;
+    color: black;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.forms input:checked  { 
+    border-bottom: 1px solid black;
+
+}
+
+.pop-up  h1{
+    color: #f5f5f5;
+}
+.pop-up button{
+    width: 100%;
+    color: black;
+    background-color: #f5f5f5;
+}
+
+.pop-up ion-icon {
+    color: black;
+    font-size: 20pt;
+}
+
+.pop-up ion-icon:hover {
+    color: white;
+}
+
+.items_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width:800px) {
+    nav {
+        display: none;
+    }
+
+        
+.icone {
+    display: block;
+}
+
+    
+}
